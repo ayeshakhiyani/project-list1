@@ -1,0 +1,134 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .dark {
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    #controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    input, select, button {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    input:focus, select:focus {
+      border-color: #007bff;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .dark input, .dark select {
+      background-color: #333;
+      color: white;
+      border: 1px solid #555;
+    }
+
+    .dark button {
+      background-color: #444;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 220px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .dark .product-card {
+      background-color: #2c2c2c;
+    }
+
+    .product-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .dark .price {
+      color: lightgreen;
+    }
+
+    #pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pagination-btn {
+      padding: 8px 14px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .pagination-btn:hover {
+      background-color: #b0b0b0;
+    }
+
+    .active-page {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .dark .pagination-btn {
+      background-color: #333;
+      color: white;
+    }
+
+    .dark .active-page {
+      background-color: #007bff;
+    }

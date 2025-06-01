@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Product list</title>
-
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="shortcut icon" href="./download.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-  <h2>🛍️ Product Showcase</h2>
+    <h2>🛍 Product Showcase</h2>
 
   <div id="controls">
-    <input type="text" id="search" placeholder=" Search product...">
+    <input type="text" id="search" placeholder="🔍 Search product...">
     <select id="categoryFilter">
       <option value="all">All Categories</option>
     </select>
+     </select>
+  <select id="sortPrice">
+    <option value="default">Sort by Price</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+  </select>
     <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
   </div>
 
-  <div id="container">Loading products...</div>
+  <div id="container"></div>
   <div id="pagination"></div>
-
-  <script src="./js/apps.js"></script>
+    
+    <script src="./js/apps.js"></script>
 </body>
 </html>
